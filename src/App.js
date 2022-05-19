@@ -1,5 +1,6 @@
 import './App.css';
 import Card from './components/Card';
+import Counter from './components/Counter';
 import Dropdown from './components/Dropdown';
 import AppHeader, { API_PATH } from './components/Header';
 
@@ -11,6 +12,7 @@ function App() {
   }
   return (
     <div className="container">
+      <Counter />
       <AppHeader title="HOW TO MANAGE STATES" />
       <p style={{ color: 'blue', fontSize: '20px' }}>You should never mutate the state of a component directly, but only through the update function. Another thing you need to be careful about is that the [useState] callback does not merge the state as [setState] in class components did. This means that you have to return a full object in callback even if you want to change only one of its properties.</p>
       <AppHeader title="WHY SHOULD YOU USE JSX?" />
